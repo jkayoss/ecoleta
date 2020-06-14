@@ -1,0 +1,99 @@
+#page-home {
+    height: 100vh;
+    background: url('../assets/home-background.svg') no-repeat;   
+    background-position: 35vw bottom;
+}
+
+#page-home .content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home header a {
+    display: flex;
+    color: var(--fontcolor);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#page-home header a span {
+    margin-right: 10px;
+    background-image: url('../assets/log-in.svg');
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main {
+    max-width: 560px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+#page-home main a{
+    background: var(--pcolor);
+    max-width: 360px;
+    height: 72px;
+    width: 100%;
+
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+    transition: 400ms;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#page-home main a:hover{
+    background-color: #2fb86e;
+}
+
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    background: rgba(0,0,0, 0.05);
+    border-radius: 8px 0px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after {
+    content: "";
+    background-image: url('../assets/search.svg');
+    width: 20px;
+    height: 20px;
+} 
+
+#page-home main a strong {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
